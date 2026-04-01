@@ -42,6 +42,7 @@ public class ClientHandler extends Thread {
         try {
             Server.removeClient(this);
             Server.broadcast(username + " has left the room");
+            System.out.println("Client " + username + " disconnected");
             socket.close();
         }
         catch(IOException ex) {
