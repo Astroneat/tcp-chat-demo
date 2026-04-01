@@ -69,8 +69,8 @@ public class ClientUI extends JFrame {
             String host = tfHost.getText().trim();
             int port = Integer.parseInt(tfPort.getText().trim());
             try {
-                ChatUI clientUI = new ChatUI(host, port, username);
-                clientUI.setVisible(true);
+                ChatUI chatUI = new ChatUI(host, port, username);
+                chatUI.setVisible(true);
                 this.dispose();
             }
             catch(Exception ex) {
